@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Generator - SANKALP LIBRARY</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Receipt Generator - SANKALP LIBRARY</h1>
+        <form id="receiptForm">
+            <input type="text" id="studentName" placeholder="Student Name" required>
+            <input type="text" id="contactNo" placeholder="Contact No." required>
+            <input type="text" id="seatNo" placeholder="Seat No." required>
+            <input type="text" id="hoursOpted" placeholder="Hours Opted" required>
+            <input type="text" id="feesPaid" placeholder="Fees Paid" required>
+            <input type="text" id="remainingDues" placeholder="Remaining Dues" required>
+            <input type="text" id="monthPaid" placeholder="Month of Fee Paid" required>
+            <button type="button" onclick="generatePDF()">Generate Receipt</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
